@@ -2,7 +2,7 @@
 Shell script revision for the automation DevOps
 
 
-##### Pseudo code 
+### Pseudo code 
 - 95% thinking + design 5% coding
 - pseudo code -> no syntax, just assumption
 

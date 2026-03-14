@@ -2,7 +2,7 @@
 Shell script revision for the automation DevOps
 
 
-##### Scripting 
+##### Pseudo code 
 - 95% thinking + design 5% coding
 - pseudo code -> no syntax, just assumption
 
@@ -21,7 +21,7 @@ else{
     - 15/2 -> 1
     - If reminder is 0 -> even
     - Otherwise odd
-    
+
 ```bash
 number=15
 remainder=15%2

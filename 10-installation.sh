@@ -18,7 +18,6 @@ VALIDATE() {
 
 echo "Installing Nginx web server..."
 dnf install nginx -y
-
 VALIDATE "Nginx"
 
 
@@ -27,6 +26,3 @@ VALIDATE "MySQL"
 
 dnf install nodejs -y
 VALIDATE "Node.js"
-
-dnf install nodejss -y
-VALIDATE "Node.jss"

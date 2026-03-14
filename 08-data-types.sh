@@ -10,7 +10,7 @@ echo "Sum of $NUM1 and $NUM2: $SUM"
 SUM=$((NUM1 + NUM3))
 echo "Sum of $NUM1 and $NUM3: $SUM"
 
-
+# Fruits array
 FRUITS=("Apple" "Banana" "Cherry")
 echo "First fruit: ${FRUITS[0]}"
 echo "Second fruit: ${FRUITS[1]}"

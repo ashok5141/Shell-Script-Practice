@@ -51,3 +51,6 @@ else{
 - Home directory of the user: $Home
 - PID of the script: $$
 - sleep 100 &, Background process id: $!
+- $@ vs $*
+    - $@ treats args seperately
+    - $* treats as single args

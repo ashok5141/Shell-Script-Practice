@@ -6,30 +6,27 @@ if [ $USERID -ne 0 ]; then
     exit 1
 fi
 
+# By default shell will not execute, only execute when called
+VALIDATE() {
+    if [ $? -eq 0 ]; then
+        echo "$1 installed . . . SUCCESS"
+    else
+        echo "$1 installation . . . FAILURE"
+        exit 1
+    fi
+}
+
 echo "Installing Nginx web server..."
 dnf install nginx -y
 
-if [ $? -eq 0 ]; then
-    echo "Nginx installed . . . SUCCESS"
-else
-    echo "Nginx installation . . . FAILURE"
-    exit 1
-fi
+VALIDATE "Nginx"
+
 
 dnf install mysql -y
-
-if [ $? -eq 0 ]; then
-    echo "MySQL installed . . . SUCCESS"
-else
-    echo "MySQL installation . . . FAILURE"
-    exit 1
-fi
+VALIDATE "MySQL"
 
 dnf install nodejs -y
+VALIDATE "Node.js"
 
-if [ $? -eq 0 ]; then
-    echo "Node.js installed . . . SUCCESS"
-else
-    echo "Node.js installation . . . FAILURE"
-    exit 1
-fi
+dnf install nodejss -y
+VALIDATE "Node.jss"

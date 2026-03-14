@@ -54,3 +54,20 @@ else{
 - $@ vs $*
     - $@ treats args seperately
     - $* treats as single args
+
+##### Data types
+- Variables are hoilding data
+    - mobile number -> numbers
+        - integers -> -33768 -> 33768
+        - float -> 45.90
+        - decimal -> long number
+        - complex -> 4+8i
+    - name -> string
+    - major -> yes or no boolean
+    - skills -> devops aws decker kubernetes -> list of skills
+    - Skills -> map or dictonary
+        - Devops: 4 -> key -> value
+        - Docker: 3
+        - Kubernetes: 2
+
+- Some issues in the data storage mistake **ariane 5 explosion**

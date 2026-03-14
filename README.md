@@ -1,6 +1,11 @@
 # Shell-Script-Practice
 Shell script revision for the automation DevOps
-
+- Variables
+- Data types
+- Conditions
+- Functions
+- Loops
+- Error handling
 
 ### Pseudo code 
 - 95% thinking + design 5% coding

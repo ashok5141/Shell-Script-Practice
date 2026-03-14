@@ -87,3 +87,6 @@ fi
 ```
 
 ##### Exit Code
+- 0 to 127 error codes
+- 0 -> Success
+- Anything else -> failure

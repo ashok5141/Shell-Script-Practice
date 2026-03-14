@@ -39,3 +39,15 @@ else{
     print("Odd number")
 }
 ```
+
+
+##### Special Variable
+- $1 $2 . . . $N args passed through script
+- All variables passed to script: $@
+- Number if variables passed to script: $#
+- Script name: $0
+- Present which directory you are in: $PWD
+- Who is running this script: $USER
+- Home directory of the user: $Home
+- PID of the script: $$
+- sleep 100 &, Background process id: $!

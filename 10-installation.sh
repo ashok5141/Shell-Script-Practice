@@ -10,8 +10,8 @@ echo "Installing Nginx web server..."
 dnf install nginx -y
 
 if [ $? -eq 0 ]; then
-    echo "Nginx installed SUCCESS."
+    echo "Nginx installed . . . SUCCESS"
 else
-    echo "FAILURE to install Nginx."
+    echo "Nginx installation . . . FAILURE"
     exit 1
 fi

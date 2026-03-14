@@ -71,3 +71,15 @@ else{
         - Kubernetes: 2
 
 - Some issues in the data storage mistake **ariane 5 explosion**
+- Everything in the bash is - Number, string
+    - everything is string in shell
+
+##### Conditions
+```bash
+if or when
+if [ expression ]; then
+    code here
+else
+    code here
+fi
+```

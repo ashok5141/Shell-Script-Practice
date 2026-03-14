@@ -14,3 +14,4 @@ echo "PID of the script: $$"
 sleep 100 &
 echo "PID of the background process: $!"
 echo "All arguments passed to the script: $*"
+echo "Exit status of the last command: $?"

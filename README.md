@@ -54,6 +54,7 @@ else{
 - $@ vs $*
     - $@ treats args seperately
     - $* treats as single args
+- Exit status of the previous command: #?
 
 ##### Data types
 - Variables are hoilding data
@@ -75,11 +76,14 @@ else{
     - everything is string in shell
 
 ##### Conditions
+- if or when
+
 ```bash
-if or when
 if [ expression ]; then
     code here
 else
     code here
 fi
 ```
+
+##### Exit Code

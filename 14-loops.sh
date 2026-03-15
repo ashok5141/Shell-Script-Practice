@@ -11,15 +11,15 @@ LOGS_FILE="$LOGS_FOLDER/$0.log"
 # By default shell will not execute, only execute when called
 VALIDATE() {
     if [ $? -eq 0 ]; then
-        echo "$1 installed . . . SUCCESS"
+        echo "$1 installed . . . SUCCESS" | tee -a $LOGS_FILE
     else
-        echo "$1 installation . . . FAILURE"
+        echo "$1 installation . . . FAILURE" | tee -a $LOGS_FILE
         exit 1
     fi
 }
 
 for package in $@ # sudo bash 14-loops.sh nginx mysql nodejs
 do
-    apt install $package -y &>> $LOGS_FILE
+    apt install $package -y &>>$LOGS_FILE
     VALIDATE $? "$package installation" 
 done

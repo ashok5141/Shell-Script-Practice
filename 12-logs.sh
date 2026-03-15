@@ -23,7 +23,7 @@ dnf install nginx -y &>> $LOGS_FILE
 VALIDATE "Nginx"
 
 
-dnf install mysql -y &>>
+dnf install mysql -y &>> $LOGS_FILE
 VALIDATE "MySQL"
 
 dnf install nodejs -y &>> $LOGS_FILE

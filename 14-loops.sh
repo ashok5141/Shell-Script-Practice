@@ -15,9 +15,9 @@ mkdir -p $LOGS_FOLDER
 # By default shell will not execute, only execute when called
 VALIDATE() {
     if [ $1 -ne 0 ]; then
-        echo "$1 installed . . . SUCCESS" | tee -a $LOGS_FILE
+        echo "$2 installed . . . SUCCESS" | tee -a $LOGS_FILE
     else
-        echo "$1 installation . . . FAILURE" | tee -a $LOGS_FILE
+        echo "$2 installation . . . FAILURE" | tee -a $LOGS_FILE
         exit 1
     fi
 }
